@@ -1,0 +1,47 @@
+var Inventery=[
+    {
+        id:221,
+        itemtype:"Electronics",
+        itemname:"Fan",
+        quantity:210
+    },
+    {
+        id:222,
+        itemtype:"Electronics",
+        itemname:"AC",
+        quantity:10
+    },
+    {
+        id:225,
+        itemtype:"Electronics",
+        itemname:"Fridge",
+        quantity:100
+    },
+    {
+        id:228,
+        itemtype:"Electronics",
+        itemname:"Lamp",
+        quantity:520
+    },
+    {
+        id:321,
+        itemtype:"Furniture",
+        itemname:"Table",
+        quantity:108
+    },
+    {
+        id:322,
+        itemtype:"Furniture",
+        itemname:"Bed",
+        quantity:180
+    },
+    {
+        id:325,
+        itemtype:"Furniture",
+        itemname:"Sofa",
+        quantity:200
+    }
+]
+
+
+module.exports=Inventery

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../src/table.css" type="text/css">
+        <style>
+            div{
+                margin:10vh;
+                display:flex;
+                justify-content: center;
+
+            }
+            table, th, td {
+              border: 1px solid;
+              padding:10px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Inventery_details</h1>
+        <div>
+           
+        <table classname="main" >
+            <thead>
+            <tr>
+            <th>Inventery_id</th>
+            <th>Inventery_type</th>
+            <th>Item_name</th>
+            <th>Available_quantity</th>
+          
+        </tr>
+    </thead>
+    <tbody>
+        <%userlist.forEach(user=>{  %> 
+        <tr>
+ <td> <%=user.id %></td>
+ <td><%=user.itemtype %></td>
+ <td><%=user.itemname %></td>
+ <td><%=user.quantity %></td>
+
+        </tr>
+        <%  }) %>
+    </tbody>
+        </table>
+    </div>
+    </body>
+</html>

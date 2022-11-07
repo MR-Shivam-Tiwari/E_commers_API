@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../src/table.css" type="text/css">
+        <style>
+            div{
+                margin:10vh;
+                display:flex;
+                justify-content: center;
+            }
+            table, th, td {
+              border: 1px solid;
+              padding:10px;
+            }
+            </style>
+    </head>
+    <body>
+
+  <h1>customer_details</h1>
+  <div>
+    <table>
+        <thead>
+            <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%userlist.forEach(user=>{  %> 
+            <tr>
+     <td> <%=user.id %></td>
+     <td><%=user.name %></td>
+     <td><%=user.email %></td>
+    
+            </tr>
+            <%  }) %>
+        </tbody>
+    </table>
+  </div>
+
+        </body>
+        </html>
+       
